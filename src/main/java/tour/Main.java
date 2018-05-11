@@ -70,9 +70,9 @@ public class Main {
            
         
         // Create a user with the "secretId" authorization and grant him read permissions on our table
-        //conn.securityOperations().createLocalUser("commissioner", new PasswordToken("gordanrocks"));
-        //conn.securityOperations().changeUserAuthorizations("commissioner", auths);
-        //conn.securityOperations().grantTablePermission("commissioner", "GothamPD", TablePermission.READ);
+        conn.securityOperations().createLocalUser("commissioner", new PasswordToken("gordanrocks"));
+        conn.securityOperations().changeUserAuthorizations("commissioner", auths);
+        conn.securityOperations().grantTablePermission("commissioner", "GothamPD", TablePermission.READ);
 		
 		
 		
